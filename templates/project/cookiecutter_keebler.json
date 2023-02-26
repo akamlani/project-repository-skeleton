@@ -1,0 +1,33 @@
+{
+    "full_name":            "Ari Kamlani",
+    "email":                "akamlani@gmail.com",
+    "username":             "akamlani",
+    "pypi_username":        "{{ cookiecutter.username }}",
+
+    "project_name":         "Keebler",
+    "project_domain":       "Core",
+    "project_type":         "Studio",
+    "pkg_name_text":        "{{ ' '.join([cookiecutter.project_name, cookiecutter.project_type]) }}",
+    "pkg_name":             "{{ '_'.join([cookiecutter.project_name, cookiecutter.project_type])|lower|replace(' ', '_')  }}",
+    "pkg_install_name":     "{{ '-'.join([cookiecutter.project_name, cookiecutter.project_domain, cookiecutter.project_type])|lower|replace(' ', '-')  }}",
+    "repo_name":            "{{ '-'.join([cookiecutter.project_name, cookiecutter.project_domain, cookiecutter.project_type])|lower|replace(' ', '-')  }}",
+    "project_description":  "project domain studio template",
+    "project_keywords":     "data, ml, ai, studio suite",
+    "license":              "MIT",
+    "version":              "0.0.1",
+
+    "venv":                 "~/.venv",
+    "venv_name":            "default-wks",
+    "venv_path":            "{{ '/'.join([cookiecutter.venv, cookiecutter.venv_name]) }}",
+    "conda_env_name":       "base.vm.v3_9",
+    "python_version":       "3.9",
+    "env_path":             "environment",
+    "env_dep_path":         "{{ '/'.join([cookiecutter.env_path, 'dependencies']) }}",
+
+    "_extensions": ["jinja2_time.TimeExtension", "cookiecutter.extensions.JsonifyExtension", "cookiecutter.extensions.UUIDExtension",
+                   "cookiecutter.extensions.SlugifyExtension", "cookiecutter.extensions.RandomStringExtension"],
+
+    "_copy_without_render": [
+        ".github/*"
+    ]
+}

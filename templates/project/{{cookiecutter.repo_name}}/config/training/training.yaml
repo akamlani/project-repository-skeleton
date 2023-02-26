@@ -1,0 +1,13 @@
+dataset:
+  # data configuration
+  batch_size: 32
+
+training:
+  # training paramters
+  num_epochs: 10
+  num_jobs:   -1
+
+optimization:
+  quanitization: false
+    fp16: false
+    bf16: false

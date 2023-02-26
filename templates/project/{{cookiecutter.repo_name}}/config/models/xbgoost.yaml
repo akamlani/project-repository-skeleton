@@ -1,0 +1,9 @@
+parameters:
+  objective:    reg::squarederror
+  eval_metric:  rmse
+  verbosity: 1
+  # constraint [0,1] means Feature_0, Feature_1  are allowed to interact with eachother, but no other variable
+  # [3,5,9], similarliy for Features_{3,5,9}
+  # e.g., per regulatory constraints  when some features are not allowed to interact with eachother
+  # e.g., based on domain knowledge, when you some some feature interactions will lead to better results
+  interaction_constraints: [[0,2], [1,3,4]]
