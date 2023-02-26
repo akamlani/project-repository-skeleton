@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cookiecutter --no-input "templates/project" 
+cookiecutter --no-input "templates/project"

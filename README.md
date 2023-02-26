@@ -9,8 +9,8 @@ Configure Project from Skeleton
 After configuring the cookiecutter.json file in `templates/project`, execute the following scripts
 ```sh
 > cd templates
-> make setup 
-# in the root folder after the project has been created 
+> make setup
+# in the root folder after the project has been created
 > cd ..
 > ./cookiecutter.sh
 # this will create a directory with all files within that will serve as the Repo directory for a new project
@@ -18,4 +18,3 @@ After configuring the cookiecutter.json file in `templates/project`, execute the
 > make setup
 # this will not install the dependencies and you can further install this package now as noted below
 ```
-
